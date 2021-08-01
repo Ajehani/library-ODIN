@@ -8,6 +8,7 @@ const overlay=document.querySelector('#overlay')
 let title=modal.querySelector("#Title")
 let author=modal.querySelector("#Author")
 let pages=modal.querySelector("#Pages")
+let close=modal.querySelector('#close')
 pages.innerHTML="yo";
 
 function Books(author,title,pages){
@@ -20,6 +21,10 @@ overlay.addEventListener('click',()=>{
     modal.setAttribute("style","display:none;")
     overlay.setAttribute("style","opacity:0;")
 
+})
+close.addEventListener('click',()=>{
+    modal.setAttribute("style","display:none;")
+    overlay.setAttribute("style","opacity:0;")
 })
 books.addEventListener('click',function(){
     // form=document.createElement('div')
