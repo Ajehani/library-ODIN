@@ -1,0 +1,55 @@
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    text-align:center;
+}
+#new{
+    background-color: black;
+    color:rgba(222, 228, 235, 0.618);
+    margin: 1% 0 0 40%;
+}
+#display{
+    text-align: center;
+    padding:1rem;
+    border: 1px solid black;
+    height:10rem;
+    width:20%;
+    margin: 0 0 0 40%;
+    font-style:italic;
+}
+#close{
+    margin:0 0 0 100%;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    background:none;
+    font-size:1.25rem;
+    font-weight:bold;
+}
+#overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:0;
+    background-color:rgba(0,0,0,.5);
+    pointer-events:none;
+}
+.modal{
+    padding:3px 15px;
+    border:1px solid black;
+    display:none;
+    margin: 50% 20%;
+    flex-direction: column;
+    align-items: center;
+    width: 10rem;
+    background-color: white;
+    color:black;
+    position: fixed;
+    top:-40rem;
+    left:40rem;
+    border-radius:10px;
+}
