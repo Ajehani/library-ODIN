@@ -9,26 +9,27 @@
 </head>
 <body>
     <h1>Welcome to My Home!</h1>
-    <p id="display">List of books:</p>
+    <hr>
     <button id="new">Add New Book</button>
+    <ol id="display"><span style="font-size: 2rem;font-style:italic ; text-decoration: underline;">List of books:</span></ol>
     <div id="overlay"></div>
-    <div class="modal">
+    <div id="modal">
         <button id="close">&times;</button>
         <label>Title:</label>
-        <input type="text" id="Title">
+        <input class="modal" type="text" id="title">
         <br>
         <label>Author:</label>
-        <input type="text" id="Author">
+        <input class="modal" type="text" id="author">
         <br>
         <label>No. Pages:</label>
-        <input type="text" id="Pages">
+        <input class="modal" type="text" id="pages">
         <br>
         <label>Have you read the book?</label>
         <input type="radio" name="ifread" value="Yes">
         <label>Yes</label>
         <input type="radio" name="ifread" value="No">
         <label>No</label>
-        <input id="submit" type="submit">
+        <input class="modal" id="submit" type="submit">
     </div>
 </body>
 <script src="script.js"></script>

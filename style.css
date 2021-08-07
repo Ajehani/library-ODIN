@@ -1,22 +1,50 @@
 html{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(240, 165, 108, 0.173);
 }
 h1{
     text-align:center;
 }
+hr{
+    border:2px solid gray;
+    margin:0 0 3rem 0; 
+}
+#check{
+    cursor:pointer;
+    outline:none;
+    background:none;
+    font-size:1rem;
+    border: 0.5px solid black;
+}
 #new{
-    background-color: black;
-    color:rgba(222, 228, 235, 0.618);
-    margin: 1% 0 0 40%;
+    background-color: rgba(70, 19, 19, 0.79);
+    color:rgb(255, 255, 255);
+    margin: 0 0 0.5rem 20%;
+    padding: 1.5rem;
+    font-size: large;
+    float:left;
 }
 #display{
-    text-align: center;
-    padding:1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem;
     border: 1px solid black;
-    height:10rem;
-    width:20%;
-    margin: 0 0 0 40%;
+    height:20rem;
+    width:50%;
+    margin:auto;
     font-style:italic;
+    overflow-y:scroll;
+}
+
+#del{
+    cursor:pointer;
+    border:none;
+    outline:none;
+    background:none;
+    font-size:1.25rem;
+    font-weight:bold;
 }
 #close{
     margin:0 0 0 100%;
@@ -31,14 +59,13 @@ h1{
     position:fixed;
     top:0;
     left:0;
-    left:0;
     right:0;
     bottom:0;
     opacity:0;
     background-color:rgba(0,0,0,.5);
     pointer-events:none;
 }
-.modal{
+#modal{
     padding:2rem 5rem;
     height:20rem;
     border:1px solid black;
@@ -52,7 +79,11 @@ h1{
     top:10%;
     left:40%; 
     border-radius:10px;
+    transform:scale(1.2,1.2)
 }
-input{
+.modal{
     height:2rem;
+    width:100%;
 }
+
+
