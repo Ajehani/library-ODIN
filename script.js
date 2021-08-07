@@ -18,8 +18,10 @@ function Books(author,title,pages,status){
     this.status=status;
 }
 let data=JSON.parse(localStorage.getItem("Library"))
+if(data){
 for(let i of data){
     add(i)
+}
 }
 console.log('this data',data)
 overlay.addEventListener('click',()=>{
